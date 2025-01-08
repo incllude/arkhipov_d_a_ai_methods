@@ -1,0 +1,6 @@
+aiogram==3.16.0
+huggingface_hub==0.27.0
+yandex_cloud_ml_sdk==0.2.4
+scipy==1.14.1
+pandas==1.4.1
+numpy==1.26.4
