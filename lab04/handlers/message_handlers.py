@@ -57,7 +57,7 @@ async def handle_model_selection(message: types.Message):
     # Сохранение выбранной модели для конкретного пользователя
     user_models[message.from_user.id] = model_mapping[message.text]
     await message.answer(
-        f"Выбрана модель: {message.text}\n",
+        f"Выбрана модель: {message.text}\n"
         "Напишите запрос"
     )
 
