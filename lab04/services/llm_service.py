@@ -23,7 +23,6 @@ class HuggingFaceService:
             Сгенерированный моделью текст
         '''
         prompt = self.create_prompt(text, context)
-        print(prompt)
         async with aiohttp.ClientSession() as session:
             # Выбор URL в зависимости от типа модели
             async with session.post(

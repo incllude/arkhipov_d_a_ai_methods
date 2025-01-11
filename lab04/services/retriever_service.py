@@ -121,5 +121,5 @@ class RetrieverService:
         # Возврат k наиболее релевантных новостей
         news = self.news.iloc[np.argsort(dist)[:self.k]].sort_values("publish_date", ascending=True).content.tolist()
         # Обрезка текстов до 200 символов для корректной работы GPT
-        # news = list(map(lambda x: x[:200], news))
+        news = list(map(lambda x: x[:200], news))
         return news
